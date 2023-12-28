@@ -10,6 +10,6 @@
 
 ## Visit My Website 
 
-You visit my website by going to [Portfolio](http://www.anjanpandey.com).
+You can visit my website by going to [Portfolio](http://www.anjanpandey.com).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
