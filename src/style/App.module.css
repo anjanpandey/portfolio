@@ -1,0 +1,13 @@
+.centered {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin-top: 1em;
+  }
+
+  .bordered {
+    border: 1px solid grey;
+    border-radius: 0.5em;
+    padding: 30px;
+  }
