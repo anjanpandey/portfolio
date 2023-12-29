@@ -1,4 +1,4 @@
-# Portfolio December 2023 
+# Portfolio
 
 
 ## Built using React and Typescript
