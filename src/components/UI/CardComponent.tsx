@@ -11,9 +11,7 @@ const CardComponent: React.FC<Card> = (props) => {
     
     // check if card has image
     const hasImage = props.img.src.trim().length > 0; 
-    const {isDarkTheme} = useContext(ThemeContext);
-    const primaryBackground : string = isDarkTheme ? "#232931": "#ffffff";
-    const primaryColor: string = isDarkTheme ? "#eeeeee": "#222222";
+    const {primaryBackground, primaryColor} = useContext(ThemeContext);
 
     return (
         <div className={`card ${props.classes}`} id={props.id} style={{...props.style, backgroundColor: primaryBackground, color: primaryColor}}>

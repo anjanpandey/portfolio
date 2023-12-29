@@ -1,17 +1,11 @@
 import timelineClasses from "../style/UI/Timeline.module.css";
-import Badge from "../models/badge";
 import Timeline from "../models/timeline";
 import TimelineComponent from "./UI/TimelineComponent";
 
+// import badges  
+import {ulm, sigmund, ascension, stanford, ensemble} from "../store/constants";
+
 const TimelinePage : React.FC = () => {
-
-    // organizations
-    const sigmund:  Badge = {id: "badge-sigmund-software", innerText: "Sigmund Software", classes: "badge bg-warning text-dark m-1", title: "Sigmund Software", style: {}};
-    const ascension:  Badge = {id: "badge-ascension", innerText: "Ascension", classes: "badge bg-info m-1", title: "Ascension", style: {}};
-    const ensemble:  Badge = {id: "badge-ensemble-hp", innerText: "Ensemble Health Partners", classes: "badge bg-success m-1", title: "Ensemble Health Partners", style: {}};
-    const ulm: Badge =  {id: "badge-ulm", innerText: "University of Louisiana Monroe", classes: "badge bg-danger text-warning m-1", title: "University of Louisiana Monroe", style: {}};
-    const stanford: Badge = {id: "badge-stanford", innerText: "Stanford University Professional Program", classes: "badge bg-danger m-1", title: "Stanford University Professional Program", style: {}};
-
     // define timeline 
     const ensembleTimeline: Timeline = {id: "timeline-ehp", timelineTitle: "June 2023 - Current", timelineBadge: ensemble, timelineContent: "Joined Ensemble as a Senior Technical Product Manager."};
     const stanfordTimeline: Timeline = {id: "timeline-stanford", timelineTitle: "February 2023 - February 2024", timelineBadge: stanford, timelineContent: "Joined professional certification program in Product Management."};

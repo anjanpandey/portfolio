@@ -7,9 +7,7 @@ import {ThemeContext} from "../../store/theme-context";
 
 const ModalComponent: React.FC<Modal> = (props) => {
 
-    const {isDarkTheme} = useContext(ThemeContext);
-    const primaryBackground : string = isDarkTheme ? "#232931": "#ffffff";
-    const primaryColor: string = isDarkTheme ? "#eeeeee": "#222222";
+    const {isDarkTheme, primaryBackground, primaryColor} = useContext(ThemeContext);
 
     const modalSize = props.modalSize.trim().length > 0 ? props.modalSize:"modal-sm"; 
     // define close button for the modal

@@ -1,4 +1,3 @@
-import React from "react";
 
 import CardComponent from "./UI/CardComponent";
 
@@ -12,9 +11,9 @@ import SeamlessImg from "../assets/images/st.png";
 import Card from "../models/card";
 import Image from "../models/image";
 import Button from "../models/button";
-import Badge from "../models/badge";
 
-
+// import badges  
+import {launchedBadge, inProgressBadge, ensemble, ascension, sigmund} from "../store/constants";
 
 
 const ProductPage : React.FC = () => {
@@ -25,15 +24,6 @@ const ProductPage : React.FC = () => {
     const seamlessImage: Image = {id: "img-ascension-seamless", name: "Seamless Transition", src: SeamlessImg, onClick: undefined, style: cardImgStyle};
     const patientPortalImage : Image = {id: "img-sigmund-patient-portal", name: "Patient Portal", src: PatientPortalImg, onClick: undefined, style: cardImgStyle};
     const contactPortalImage : Image = {id: "img-sigmund-contact-portal", name: "Contact Portal", src: ContactPortalImg, onClick: undefined, style: cardImgStyle};
-
-    // statuses 
-    const badgeStyle: React.CSSProperties = {textWrap: "wrap"};
-    const inProgressBadge : Badge = {id: "badge-in-progress", innerText: "In Progress", classes: "badge bg-primary m-1", title: "In Progress", style: badgeStyle}; 
-    const launchedBadge: Badge = {id: "badge-launched", innerText: "Launched", classes: "badge bg-success m-1", title: "Launched", style: badgeStyle}; 
-    // organizations
-    const sigmund:  Badge = {id: "badge-sigmund-software", innerText: "Sigmund Software", classes: "badge bg-warning text-dark m-1", title: "Sigmund Software", style:badgeStyle};
-    const ascension:  Badge = {id: "badge-ascension", innerText: "Ascension", classes: "badge bg-info m-1", title: "Ascension", style: badgeStyle};
-    const ensemble:  Badge = {id: "badge-ensemble-hp", innerText: "Ensemble Health Partners", classes: "badge bg-success m-1", title: "Ensemble Health Partners", style: badgeStyle};
 
 
     // call this func when video button is clicked 

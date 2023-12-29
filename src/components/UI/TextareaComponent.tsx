@@ -6,9 +6,7 @@ import {ThemeContext} from '../../store/theme-context';
 
 const TextareaComponent: React.FC<Textarea> = (props) => {
 
-    const {isDarkTheme} = useContext(ThemeContext);
-    const primaryBackground : string = isDarkTheme ? "#232931": "#ffffff";
-    const primaryColor: string = isDarkTheme ? "#eeeeee": "#222222";
+    const {primaryBackground, primaryColor} = useContext(ThemeContext);
 
     return (
         <div className="form-floating m-1">

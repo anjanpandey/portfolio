@@ -3,6 +3,8 @@ import React, {useState} from "react";
 type ThemeContextObj = {
     isDarkTheme: boolean;
     setSelectedTheme() : void;
+    primaryBackground: string;
+    primaryColor: string;
 };
 
 type Props = {
@@ -12,7 +14,9 @@ type Props = {
 
 export const ThemeContext = React.createContext<ThemeContextObj>({
     isDarkTheme: false,
-    setSelectedTheme: () => {}
+    setSelectedTheme: () => {},
+    primaryBackground: "#ffffff",
+    primaryColor: "#222222"
 });
  
 
@@ -55,7 +59,9 @@ const ThemeContextProvider : React.FC<Props> = ({children}) => {
 
     const contextValue : ThemeContextObj = {
         isDarkTheme: isDark,
-        setSelectedTheme: themeHandler
+        setSelectedTheme: themeHandler,
+        primaryBackground: isDark ? "#232931":"#ffffff",
+        primaryColor: isDark ? "#eeeeee": "#222222"
     };
 
     return (

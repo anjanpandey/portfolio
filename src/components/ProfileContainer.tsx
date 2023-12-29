@@ -10,9 +10,7 @@ type Props = {
 
 const ProfileContainer : React.FC<Props> = ({children}) => {
     
-    const {isDarkTheme} = useContext(ThemeContext);
-    const primaryBackground : string = isDarkTheme ? "#232931": "#ffffff";
-    const primaryColor: string = isDarkTheme ? "#eeeeee": "#222222";
+    const {primaryBackground, primaryColor} = useContext(ThemeContext);
     const profileTheme : React.CSSProperties = {backgroundColor: primaryBackground , color: primaryColor};
 
     // apply the theme to the whole body
