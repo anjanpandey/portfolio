@@ -1,0 +1,33 @@
+.outer {
+    border-left: 4px dotted grey;
+  }
+
+.timelineCard {
+    position: relative;
+    margin: 0 0 10px 10px;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 470px;
+}
+
+.timelineInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.timelineTitle {
+    position: relative;
+}
+
+.timelineTitle::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: rgb(54, 221, 12);
+    border-radius: 999px;
+    left: -35px;
+    top:6px;
+    border: 3px solid rgb(219, 231, 230);
+  }
