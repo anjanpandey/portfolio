@@ -48,15 +48,15 @@ const Navbar : React.FC<Nav> = ({currentPage, onNavChange}) => {
     const btnClasses = isDarkTheme ? "list-group-item list-group-item-action list-group-item-dark left-nav-btn btn-dark": "list-group-item list-group-item-action left-nav-btn";
 
     // define left nav btns 
-    const aboutBtn : Button = {id: Page.About, name: "👨‍💻 About", onClick: onClickNavBarBtn, classes:btnClasses, btnIcon: undefined, style: {}};
-    const timelineBtn : Button = {id:Page.Timeline, name: "🕝 Timeline", onClick:onClickNavBarBtn, classes:btnClasses, btnIcon: undefined, style: {}};
-    const productsBtn : Button = {id:Page.Products, name: "🚀 Products", onClick:onClickNavBarBtn, classes:btnClasses, btnIcon: undefined, style: {}};
-    const projectBtn : Button = {id:Page.Projects, name: "🧰 Projects", onClick:onClickNavBarBtn, classes:btnClasses, btnIcon: undefined, style: {}};
-    const certificationsBtn : Button = {id: Page.Certifications, name: "🏆 Certifications", onClick:onClickNavBarBtn, classes:btnClasses, btnIcon: undefined, style: {}}; 
-    const contactBtn: Button = {id: Page.ContactMe, name: "✉️ Contact Me", onClick:onClickNavBarBtn, classes:btnClasses, btnIcon: undefined, style: {}}; 
+    const aboutBtn : Button = {id: Page.About, name: "about", onClick: onClickNavBarBtn, classes:btnClasses, btnIcon: undefined, style: {}};
+    const timelineBtn : Button = {id:Page.Timeline, name: "timeline", onClick:onClickNavBarBtn, classes:btnClasses, btnIcon: undefined, style: {}};
+    const productsBtn : Button = {id:Page.Products, name: "products", onClick:onClickNavBarBtn, classes:btnClasses, btnIcon: undefined, style: {}};
+    // const projectBtn : Button = {id:Page.Projects, name: "projects", onClick:onClickNavBarBtn, classes:btnClasses, btnIcon: undefined, style: {}};
+    const certificationsBtn : Button = {id: Page.Certifications, name: "certifications", onClick:onClickNavBarBtn, classes:btnClasses, btnIcon: undefined, style: {}}; 
+    const contactBtn: Button = {id: Page.ContactMe, name: "contact me", onClick:onClickNavBarBtn, classes:btnClasses, btnIcon: undefined, style: {}}; 
 
     // add new nav item here 
-    const btns : ReadonlyArray<Button> = [aboutBtn, timelineBtn, productsBtn, projectBtn, certificationsBtn, contactBtn]
+    const btns : ReadonlyArray<Button> = [aboutBtn, timelineBtn, productsBtn, certificationsBtn, contactBtn]
 
     return (
         <div className="list-group m-1" id="div-left-nav">

@@ -54,7 +54,7 @@ const App = () => {
             </div>
             <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12" id="div-right-nav-container">
               <div className={currentPage !== Page.Products &&
-                              currentPage !== Page.Certifications ? `${appClasses.centered} ${appClasses.bordered}` : ``}>
+                              currentPage !== Page.Certifications ? `${appClasses.centered}` : ``}>
                 {currentPage === Page.Timeline? <TimelinePage /> :
                   currentPage === Page.Products ? <ProductPage /> : 
                   currentPage === Page.Projects ? <ProjectPage /> :

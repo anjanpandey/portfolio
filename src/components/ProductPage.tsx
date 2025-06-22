@@ -31,7 +31,7 @@ const ProductPage : React.FC = () => {
     // patient portal url
     const patientPortalVideoURL: string = 'https://drive.google.com/file/d/17RRl3qnzrV3_F3WLPYXBnoIbcLUp7ZX3/view';
     // button 
-    const patientPortalButton:  Button = {id: "btn-view-video", name: "View Video", onClick: () => openItemInANewTab(patientPortalVideoURL), classes: "btn btn-primary m-1", btnIcon: newTabIcon, style: {}};
+    const patientPortalButton:  Button = {id: "btn-view-video", name: "view video", onClick: () => openItemInANewTab(patientPortalVideoURL), classes: "btn btn-primary m-1", btnIcon: newTabIcon, style: {}};
 
 
     // define card 

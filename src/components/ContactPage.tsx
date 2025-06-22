@@ -90,16 +90,16 @@ const ContactPage: React.FC = () => {
     }
 
     // define textbox
-    const textBox : Input = {id: "txt-subject",label: "Subject", inputType: "text", maxLength: 25, minLength: 0, value: subjectVal, placeholder: "Subject", onChange: handleSubjectChange}; 
+    const textBox : Input = {id: "txt-subject",label: "subject", inputType: "text", maxLength: 25, minLength: 0, value: subjectVal, placeholder: "Subject", onChange: handleSubjectChange}; 
     // define textarea
-    const textArea : Textarea = {id: "txt-message", label: "Message", maxLength: 255, minLength: 0, value: messageVal, placeholder: "Message", onChange: handleMessageChange, style:{height:"130px"}}; 
+    const textArea : Textarea = {id: "txt-message", label: "message", maxLength: 255, minLength: 0, value: messageVal, placeholder: "Message", onChange: handleMessageChange, style:{height:"130px"}}; 
     // icon 
-    const sendIcon: Icon = {id: "icn-send", title: "Send", styleClasses: "fa-solid fa-paper-plane me-1", href: ""};
+    const sendIcon: Icon = {id: "icn-send", title: "send", styleClasses: "fa-solid fa-paper-plane me-1", href: ""};
     // define button
-    const submitButton : Button = {id: "btn-send-message", name: "Send", onClick: undefined, classes: "btn btn-success m-1", btnIcon: sendIcon, style: {}};
+    const submitButton : Button = {id: "btn-send-message", name: "send", onClick: undefined, classes: "btn btn-success m-1", btnIcon: sendIcon, style: {}};
     
     return (
-        <div>      
+        <div className="border p-3 rounded">      
             { error ? errorModal : ""}
             { success ? successAlert : ""}
             <form onSubmit={submitHandler}>
