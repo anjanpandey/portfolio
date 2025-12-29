@@ -1,8 +1,9 @@
     import Badge from "../models/badge";
     import Icon from "../models/icon";
-    
+    import styles from "../style/UI/Badge.module.css";
+
     // constant badges that can be exported in all pages 
-    const badgeStyle: React.CSSProperties = {textWrap: "wrap", backgroundColor: "#2A4D8F"};
+    const badgeStyle: React.CSSProperties = {textWrap: "wrap"};
     export const inProgressBadge : Badge = {id: "badge-in-progress", innerText: "In Progress", classes: "badge bg-primary m-1", title: "In Progress", style: badgeStyle}; 
     export const launchedBadge: Badge = {id: "badge-launched", innerText: "Launched", classes: "badge bg-success m-1", title: "Launched", style: badgeStyle}; 
     export const completedBadge: Badge = {id: "badge-completed", innerText: "Completed", classes: "badge bg-primary m-1", title: "Completed", style: badgeStyle}; 
@@ -15,8 +16,8 @@
     export const lsbdc: Badge = {id: "badge-lasbdc", innerText: "Louisiana Small Business Development Center (LSBDC)", classes: "badge bg-danger m-1", title: "Louisiana Small Business Development Center", style: badgeStyle};
     export const startup: Badge = {id: "badge-startup", innerText: "Startup and Lean", classes: "badge bg-info m-1", title: "Startup and Lean", style: badgeStyle};
      export const projectHealthcare: Badge = {id: "badge-project-healthcare", innerText: "Project Healthcare", classes: "badge bg-info text-dark m-1", title: "Project Healthcare", style: badgeStyle};
-    export const healcovery: Badge = {id: "badge-healcovery", innerText: "healcovery", classes: "badge text-light m-1", title: "healcovery", style: badgeStyle};
-
+    export const healcovery: Badge = {id: "badge-healcovery", innerText: "healcovery", classes: `badge m-1 ${styles.healcovery}`, title: "healcovery", style: badgeStyle};
+    export const caseyCareAI: Badge =  {id: "badge-casey-ai", innerText: "CaseyCare AI", classes: `badge m-1 ${styles.casey}`, title: "CaseyCare AI", style: badgeStyle};
     // pages
     export const enum Page {
         About = "about",

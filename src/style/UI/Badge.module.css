@@ -1,0 +1,16 @@
+.healcovery {
+    background-image: linear-gradient(to right,#2c504b, #1E8B6C, #A8C952);
+    width: "200px";
+    height: "100px";
+}
+.healcovery:hover {
+    background-image: linear-gradient(to right,#00332c, #00a86b, #c4d600);
+    color:white;
+}
+
+
+.casey {
+    background-image: linear-gradient(to left,  #178cc6, #048259, #01594d);
+    width: "200px";
+    height: "100px";
+}

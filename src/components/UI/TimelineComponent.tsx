@@ -24,6 +24,7 @@ const TimelineComponent: React.FC<Timeline> = (props) => {
                 </h2>
                 <BadgeComponent id={badge.id} innerText={badge.innerText} classes={badge.classes} title={badge.title} style={badge.style} />
                 <p id={`content-${props.id}`}>{props.timelineContent}</p>
+                <a className={`${badge.classes} btn p-3`} href={props.timelineLink.url} id={`href-${props.id}`} target="_blank" title={props.timelineLink.name} rel="noreferrer">{props.timelineLink.name}</a>
             </div>
         </div>
     );
