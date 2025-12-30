@@ -1,10 +1,10 @@
 .healcovery {
-    background-image: linear-gradient(to right,#2c504b, #1E8B6C, #A8C952);
+    background-image: linear-gradient(to right,#2c504b, #1E8B6C);
     width: "200px";
     height: "100px";
 }
 .healcovery:hover {
-    background-image: linear-gradient(to right,#00332c, #00a86b, #c4d600);
+    background-image: linear-gradient(to right,#00332c, #00a86b);
     color:white;
 }
 
