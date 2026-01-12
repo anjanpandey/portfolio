@@ -12,7 +12,7 @@ const AboutPage : React.FC = () => {
 
     // define elements 
     const image : Image =  {id: "img-ap", name: "Anjan Pandey", src: ProfilePic, onClick: undefined, style: {maxHeight:"550px", maxWidth:"350px", width:"100%", height:"auto", borderRadius:"50%", position: "relative"}};
-    const context = "Founder & CEO @ healcovery | Population Health | Value-Based Care | Patient Advocate | Ethical AI";
+    const context = "Founder & CEO @ healcovery | Population Health | Value-Based Care | Human-Centered Design | Patient Advocate | Ethical AI";
     // const icons: ReadonlyArray<Icon> = [{id: "icn-linkedin", title: "Visit my LinkedIn", styleClasses: "m-1", href: "https://www.linkedin.com/in/anjan-pandey"}, {id: "icn-github", title: "Visit My Github", styleClasses: "m-1", href: "https://github.com/anjanpandey"}];
 
     
