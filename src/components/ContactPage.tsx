@@ -102,6 +102,7 @@ const ContactPage: React.FC = () => {
         <div className="border p-3 rounded">      
             { error ? errorModal : ""}
             { success ? successAlert : ""}
+            <h2 className="p-3">Let's connect!</h2>
             <form onSubmit={submitHandler}>
                 <TextboxComponent id={textBox.id} 
                                 label={textBox.label}
