@@ -11,8 +11,9 @@ interface Modal extends PropsWithChildren {
     isDraggable: boolean;
     isLeftModal: boolean;
     isRightModal: boolean;
-    onModalClose:  React.MouseEventHandler<HTMLButtonElement> | undefined;
-    style: React.CSSProperties;
+    onModalResize?:  React.MouseEventHandler<HTMLButtonElement> | undefined;
+    onModalClose?:  React.MouseEventHandler<HTMLButtonElement> | undefined;
+    style?: React.CSSProperties | undefined;
 }
 
 export default Modal;

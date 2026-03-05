@@ -5,9 +5,9 @@
 
 interface Icon {
     id: string;
-    title: string;
+    title?: string | undefined;
     styleClasses: string;
-    href: string;
+    href?: string | undefined;
 }
 
 export default Icon;

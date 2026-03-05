@@ -7,7 +7,7 @@ import Icon from "../../models/icon";
  * @returns 
  */
 const IconComponent: React.FC<Icon> = (props) => {
-    const isClickable = props.href.trim().length > 0;
+    const isClickable = props.href ? props.href.trim().length > 0 : false;
 
     // make sure the icon is clickable 
     if(isClickable) {
