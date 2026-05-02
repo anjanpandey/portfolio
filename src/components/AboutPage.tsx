@@ -66,7 +66,7 @@ const AboutPage : React.FC = () => {
         <div className="flex text-center border p-5 rounded">
             <ImageComponent id={image.id} src={image.src} onClick={image.onClick} name={image.name} style={image.style} />
             <p className="mt-2"><b>{context}</b></p>
-            <p className="mt-2">{sites.map(site => <a key={site.name} href={site.url} target="_blank" rel="noreferrer" className="btn btn-light me-2" style={{"textDecoration": "none"}}>{site.name}</a>)}</p>
+            <p className="mt-2">{sites.map(site => <a key={site.name} href={site.url} target="_blank" rel="noreferrer" className="btn btn-light m-2" style={{"textDecoration": "none"}}>{site.name}</a>)}</p>
         </div>
         </>
 
