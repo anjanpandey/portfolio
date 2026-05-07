@@ -42,7 +42,7 @@ const AboutPage : React.FC = () => {
     // const icons: ReadonlyArray<Icon> = [{id: "icn-linkedin", title: "Visit my LinkedIn", styleClasses: "m-1", href: "https://www.linkedin.com/in/anjan-pandey"}, {id: "icn-github", title: "Visit My Github", styleClasses: "m-1", href: "https://github.com/anjanpandey"}];
 
     
-    const sites = [{"name": "Youtube", "url": "https://www.youtube.com/@anjanpandey"}, {"name": "Linkedin", "url": "https://www.linkedin.com/in/anjan-pandey"}, {"name": "X", "url": "https://www.x.com/theanjanpandey"}, {"name": "Github", "url": "https://github.com/anjanpandey"}]
+    const sites = [{"name": "Youtube", "url": "https://www.youtube.com/@anjanpandey"}, {"name": "Linkedin", "url": "https://www.linkedin.com/in/theanjanpandey"}, {"name": "X", "url": "https://www.x.com/theanjanpandey"}, {"name": "Github", "url": "https://github.com/anjanpandey"}]
 
 
     const picModal = <ModalComponent id="about-id-modal" 
