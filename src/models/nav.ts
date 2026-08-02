@@ -3,7 +3,7 @@
  * 
  */
 
-interface Nav {
+type Nav = {
     currentPage: string;
     onNavChange(page: string): void
 }

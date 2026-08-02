@@ -3,7 +3,7 @@
  * 
  */
 
-interface Badge {
+type Badge =  {
     id: string;
     innerText: string;
     classes: string;

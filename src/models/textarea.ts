@@ -3,7 +3,7 @@
  * 
  */
 
-interface Textarea {
+type Textarea = {
     id: string;
     label: string;
     maxLength: number;

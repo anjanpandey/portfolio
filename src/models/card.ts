@@ -7,7 +7,7 @@ import Badge from "./badge";
 import Button from "./button";
 import Image from "./image";
 
-interface Card {
+type Card =  {
     id: string;
     img: Image;
     cardTitle: string;

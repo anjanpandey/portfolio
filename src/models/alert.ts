@@ -3,7 +3,7 @@
  * 
  */
 
-interface Alert {
+type Alert =  {
     id: string;
     innerText: string;
     classes: string;

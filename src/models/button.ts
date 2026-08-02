@@ -3,10 +3,10 @@
  * 
  */
 
-import { Attributes } from "react";
+
 import Icon from "./icon";
 
-interface Button {
+type Button = {
     id: string;
     name: string;
     onClick: React.MouseEventHandler<HTMLButtonElement> | undefined; 

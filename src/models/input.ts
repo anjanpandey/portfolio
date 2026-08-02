@@ -3,7 +3,7 @@
  * 
  */
 
-interface Input {
+type Input = {
     id: string;
     label: string;
     inputType: string;

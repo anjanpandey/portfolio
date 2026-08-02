@@ -1,13 +1,12 @@
-import { PropsWithChildren } from "react";
 import Badge from "./badge";
 
 
-interface TimelineLink {
+type TimelineLink = {
     name:string;
     url:string;
 }
 
-interface Timeline extends PropsWithChildren {
+type Timeline = {
     id: string;
     timelineTitle: string;
     timelineBadge: Badge;

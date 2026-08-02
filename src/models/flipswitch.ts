@@ -3,7 +3,7 @@
  * 
  */
 
-interface Flipswitch {
+type Flipswitch = {
     id: string;
     label: string;
     isChecked: boolean;

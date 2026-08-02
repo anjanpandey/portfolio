@@ -3,7 +3,7 @@
  * 
  */
 
-interface Image {
+type Image = {
     id: string;
     name: string;
     src: string;

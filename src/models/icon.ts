@@ -3,7 +3,7 @@
  * 
  */
 
-interface Icon {
+type Icon = {
     id: string;
     title?: string | undefined;
     styleClasses: string;
