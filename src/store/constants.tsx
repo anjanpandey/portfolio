@@ -15,7 +15,6 @@
     export const stanford: Badge = {id: "badge-stanford", innerText: "Stanford University Professional Program", classes: "badge bg-danger m-1", title: "Stanford University Professional Program", style: badgeStyle};
     export const lsbdc: Badge = {id: "badge-lasbdc", innerText: "Louisiana Small Business Development Center (LSBDC)", classes: "badge bg-danger m-1", title: "Louisiana Small Business Development Center", style: badgeStyle};
     export const startup: Badge = {id: "badge-startup", innerText: "Startup and Lean", classes: "badge bg-info m-1", title: "Startup and Lean", style: badgeStyle};
-     export const projectHealthcare: Badge = {id: "badge-project-healthcare", innerText: "Project Healthcare", classes: "badge bg-info text-dark m-1", title: "Project Healthcare", style: badgeStyle};
     export const healcovery: Badge = {id: "badge-healcovery", innerText: "healcovery", classes: `badge m-1 ${styles.healcovery}`, title: "healcovery", style: badgeStyle};
     export const caseyCareAI: Badge =  {id: "badge-casey-ai", innerText: "CaseyCare AI", classes: `badge m-1 ${styles.casey}`, title: "CaseyCare AI", style: badgeStyle};
     // pages

@@ -3,12 +3,11 @@ import Timeline from "../models/timeline";
 import TimelineComponent from "./UI/TimelineComponent";
 
 // import badges  
-import {lsbdc, ulm, sigmund, ascension, stanford, ensemble, cumberlands, startup, projectHealthcare, healcovery} from "../store/constants";
+import {lsbdc, ulm, sigmund, ascension, stanford, ensemble, cumberlands, startup, healcovery} from "../store/constants";
 
 const TimelinePage : React.FC = () => {
     // define timeline 
     const healcoveryTimeline: Timeline = {id: "timeline-healcovery", timelineTitle: "August 2024 - Present", timelineBadge: healcovery, timelineContent: "Building AI, Casey, for Hospital Case Management", timelineLink: {name:"Visit healcovery", url:"https://www.healcovery.ai/"}};
-    const projectHealthcareTimeline: Timeline = {id: "timeline-project-healthcare", timelineTitle: "March 2025 - May 2025", timelineBadge: projectHealthcare , timelineContent: "Learned healthcare sales, marketing, and relationship building, and met with many amazing people.", timelineLink: {name:"Visit Project Healthcare 2025", url:"https://ec.co/2025/02/24/project-healthcare-accelerator-welcomes-2025-spring-cohort/"}};
     const startupTimeline: Timeline = {id: "timeline-startup", timelineTitle: "March 2024 - July 2024", timelineBadge: startup, timelineContent: "Explored startup ideas, conducting market analysis, meeting people, etc.", timelineLink: {name:"", url:""}};
     const stanfordTimeline: Timeline = {id: "timeline-stanford", timelineTitle: "February 2023 - April 2024", timelineBadge: stanford, timelineContent: "I joined this program to hone my product management skills. The program has six courses, two required, and four electives. The course covered topics like product strategy, user research, demand creation, growth, financials, and marketing. I am thankful to Ascension Healthcare for reimbursing the cost of the course. ", timelineLink: {name:"", url:""}};
     const ensembleTimeline: Timeline = {id: "timeline-ehp", timelineTitle: "June 2023 - February 2024", timelineBadge: ensemble, timelineContent: "I was a Senior Product Manager at Ensemble Health Partners, a revenue cycle management company. I led the quantitative and qualitative research of the billing process at Ensemble, working with UX designers for user interviews and the principal product manager for data analysis. I created a product roadmap for the Billing team to prepare for the 2025 billing initiative. I also worked with the compliance/audit team to launch the MVP of the 'Payer Audits' module. The module allowed the team to track and respond to government and commercial audits. I launched the MVP in VCU Health. Overall, I learned about revenue cycle management and the claims lifecycle at Ensemble. ", timelineLink: {name:"", url:""}};
@@ -20,7 +19,7 @@ const TimelinePage : React.FC = () => {
    
 
     // add your card here to render below
-    const timelineCards : ReadonlyArray<Timeline> = [healcoveryTimeline, projectHealthcareTimeline, startupTimeline, stanfordTimeline, ensembleTimeline, ascensionTimeline, cumberlandsTimeline, sigmundTimeline, sbdcTimeline, ulmTimeline];
+    const timelineCards : ReadonlyArray<Timeline> = [healcoveryTimeline, startupTimeline, stanfordTimeline, ensembleTimeline, ascensionTimeline, cumberlandsTimeline, sigmundTimeline, sbdcTimeline, ulmTimeline];
 
     return (
         <div className={timelineClasses.outer}>
