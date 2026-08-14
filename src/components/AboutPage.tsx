@@ -37,7 +37,7 @@ const AboutPage : React.FC = () => {
     }
 
         // define elements 
-    const image : Image =  {id: "img-ap", name: "Anjan Pandey", src: ProfilePic, onClick: enlargePicture, style: {maxHeight:"500px", maxWidth:"500px", width:"100%", height:"auto", borderRadius:"50%", position: "relative", "cursor": "pointer"}};
+    const image : Image =  {id: "img-ap", name: "Anjan Pandey", src: ProfilePic, onClick: enlargePicture, style: {maxHeight:"300px", maxWidth:"300px", width:"100%", height:"auto", borderRadius:"50%", position: "relative", "cursor": "pointer"}};
     const context = "Founder & CEO @ healcovery | Human-Centered Design | Ethical AI";
     // const icons: ReadonlyArray<Icon> = [{id: "icn-linkedin", title: "Visit my LinkedIn", styleClasses: "m-1", href: "https://www.linkedin.com/in/anjan-pandey"}, {id: "icn-github", title: "Visit My Github", styleClasses: "m-1", href: "https://github.com/anjanpandey"}];
 
