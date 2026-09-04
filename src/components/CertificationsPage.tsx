@@ -27,9 +27,9 @@ const CertificationsPage : React.FC = () => {
 
 
     // buttons 
-    const learnMoreStanfordButton:  Button = {id: "btn-learn-more-stanford-pm-program", name: "learn More", onClick: () => openItemInANewTab(learnMoreStanfordCertProgramURL) , classes: "btn btn-danger m-1", btnIcon: newTabIcon, style: {cursor:"pointer"}};
+    const learnMoreStanfordButton:  Button = {id: "btn-learn-more-stanford-pm-program", name: "Learn More", onClick: () => openItemInANewTab(learnMoreStanfordCertProgramURL) , classes: "btn btn-danger m-1", btnIcon: newTabIcon, style: {cursor:"pointer"}};
     // const viewInCredlyButton:  Button = {id: "btn-view-in-credly", name: "View In Credly", onClick: () => openItemInANewTab(viewInCredlyURL), classes: "btn btn-warning m-1", btnIcon: newTabIcon, style: {cursor:"pointer"}};
-    const learnMorePythonDSButton:  Button = {id: "btn-learn-more-python-ds-cert", name: "learn More", onClick: () => openItemInANewTab(learnMorePythonDSCertProgramURL), classes: "btn btn-primary m-1", btnIcon: newTabIcon, style: {cursor:"pointer"}};
+    const learnMorePythonDSButton:  Button = {id: "btn-learn-more-python-ds-cert", name: "Learn More", onClick: () => openItemInANewTab(learnMorePythonDSCertProgramURL), classes: "btn btn-primary m-1", btnIcon: newTabIcon, style: {cursor:"pointer"}};
 
     // define card 
     const cardStyle: React.CSSProperties = {minWidth:"300px", maxWidth:"530px", maxHeight:"970px", margin:"1em"};
