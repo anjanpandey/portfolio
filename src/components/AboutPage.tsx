@@ -36,13 +36,33 @@ const AboutPage : React.FC = () => {
         }
     }
 
-        // define elements 
+    const healcovery = <a href="https://www.healcovery.ai" title="Visit healcovery" target="_blank" rel="noreferrer">healcovery</a>;
+
+    // define elements 
     const image : Image =  {id: "img-ap", name: "Anjan Pandey", src: ProfilePic, onClick: enlargePicture, style: {maxHeight:"250px", maxWidth:"250px", width:"100%", height:"auto", borderRadius:"50%", position: "relative", "cursor": "pointer"}};
-    const context = "Founder & CEO @ healcovery | Human-Centered Design | Ethical AI";
+    const context = <p>Founder & CEO @ {healcovery} | Human-Centered Design | Ethical AI</p>
     // const icons: ReadonlyArray<Icon> = [{id: "icn-linkedin", title: "Visit my LinkedIn", styleClasses: "m-1", href: "https://www.linkedin.com/in/anjan-pandey"}, {id: "icn-github", title: "Visit My Github", styleClasses: "m-1", href: "https://github.com/anjanpandey"}];
 
     
-    const sites = [{"name": "Youtube", "url": "https://www.youtube.com/@anjanpandey"}, {"name": "Linkedin", "url": "https://www.linkedin.com/in/theanjanpandey"}, {"name": "X", "url": "https://www.x.com/theanjanpandey"}, {"name": "Github", "url": "https://github.com/anjanpandey"}]
+    const sites = [{ "name": "Youtube",
+                     "url": "https://www.youtube.com/@anjanpandey"
+                    }, 
+                    {
+                        "name": "Linkedin",
+                       "url": "https://www.linkedin.com/in/theanjanpandey"
+                    }, 
+                    {
+                        "name": "X", 
+                        "url": "https://www.x.com/theanjanpandey"
+                    }, 
+                    {
+                        "name": "Github",
+                         "url": "https://github.com/anjanpandey"
+                    },
+                    {
+                        "name": "Credly",
+                        "url": "https://www.credly.com/users/anjanpandey/"
+                    }].sort((a, b) => a.name.localeCompare(b.name))
 
 
     const picModal = <ModalComponent id="about-id-modal" 
@@ -66,7 +86,7 @@ const AboutPage : React.FC = () => {
         <div className="flex text-center border p-5 rounded">
             <ImageComponent id={image.id} src={image.src} onClick={image.onClick} name={image.name} style={image.style} />
             <p className="mt-2"><b>{context}</b></p>
-            <p className="mt-2">{sites.map(site => <a key={site.name} href={site.url} target="_blank" rel="noreferrer" className="btn btn-light m-2" style={{"textDecoration": "none"}}>{site.name}</a>)}</p>
+            <p className="mt-2">{sites.map(site => <a key={site.name} href={site.url} target="_blank" rel="noreferrer" className="btn btn-outline-primary m-2" style={{"textDecoration": "none"}}>{site.name}</a>)}</p>
         </div>
         </>
 

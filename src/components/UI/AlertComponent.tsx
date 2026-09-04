@@ -6,12 +6,12 @@ import ButtonComponent from "./ButtonComponent";
 
 const AlertComponent: React.FC<Alert> = (props) => {
 
-    let dismissBtn : Button = {id: "btn-"+props.id, classes: "btn-close float-end", name:"", btnIcon: undefined, onClick: props.onDismiss, style: {}}; 
+    let dismissBtn : Button = {id: "btn-"+props.id, classes: "btn-close", name:"", btnIcon: undefined, onClick: props.onDismiss, style: {}}; 
     
 
     return (
-       <div id={props.id} className={`alert ${props.classes}`} role="alert" style={props.style}>
-            {props.innerText}
+       <div id={props.id} className={`alert alert-dismissible  ${props.classes}`} role="alert" style={props.style}>
+            <p>{props.innerText}</p>
             <ButtonComponent id={dismissBtn!.id} name={dismissBtn!.name} classes={dismissBtn!.classes} onClick={dismissBtn!.onClick} btnIcon={dismissBtn!.btnIcon} style={dismissBtn!.style} />
        </div>
     );
