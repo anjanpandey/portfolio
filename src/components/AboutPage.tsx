@@ -3,7 +3,7 @@ import React, { ReactNode, useState } from "react";
 import ImageComponent from "./UI/ImageComponent";
 
 import Image from "../models/image";
-import ProfilePic from '../assets/images/ap.png';
+import ProfilePic from '../assets/images/anjan.jpg';
 import ModalComponent from "./UI/ModalComponent";
 
 
